@@ -1,0 +1,111 @@
+{
+  "@@locale": "en",
+
+  "appName": "AgriLink Edge",
+  "@appName": { "description": "Application name." },
+
+  "appTagline": "AI-Powered Agriculture for Africa",
+  "@appTagline": { "description": "Tagline on splash and onboarding." },
+
+  "splashInitializing": "Initializing...",
+  "splashLoadingAi": "Loading AI models...",
+  "splashLoadingDatabase": "Preparing database...",
+  "splashReady": "Ready",
+
+  "onboardingSkip": "Skip",
+  "onboardingNext": "Next",
+  "onboardingGetStarted": "Get Started",
+
+  "onboarding1Title": "Welcome to AgriLink Edge",
+  "onboarding1Description": "The most advanced offline-first agricultural intelligence platform in Africa.",
+
+  "onboarding2Title": "Works Without Internet",
+  "onboarding2Description": "AI diagnosis, farm management, and weather forecasts — all available offline.",
+
+  "onboarding3Title": "Diagnose Crop Diseases",
+  "onboarding3Description": "Point your camera at any crop. Our AI identifies diseases in seconds.",
+
+  "onboarding4Title": "Farmer-to-Farmer Network",
+  "onboarding4Description": "Connect with nearby farmers even without internet using mesh networking.",
+
+  "onboarding5Title": "Live Weather Intelligence",
+  "onboarding5Description": "Hyperlocal weather forecasts and spray advisories tailored to your farm.",
+
+  "onboarding6Title": "Find Markets and Buyers",
+  "onboarding6Description": "Get real-time prices, nearby buyers, and sell your produce directly.",
+
+  "onboarding7Title": "Government Collaboration",
+  "onboarding7Description": "Connect with AGRITEX extension officers and access government support.",
+
+  "onboarding8Title": "Allow Permissions",
+  "onboarding8Description": "AgriLink Edge needs camera, location, and storage to give you the best experience.",
+
+  "loginTitle": "Sign In",
+  "loginPhoneLabel": "Phone Number",
+  "loginEmailLabel": "Email Address",
+  "loginPasswordLabel": "Password",
+  "loginButton": "Sign In",
+  "loginBiometricButton": "Use Biometrics",
+  "loginGuestButton": "Continue as Guest",
+  "loginRegisterPrompt": "Don't have an account?",
+  "loginRegisterLink": "Register",
+
+  "dashboardGreetingMorning": "Good morning, {name}",
+  "@dashboardGreetingMorning": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+
+  "dashboardGreetingAfternoon": "Good afternoon, {name}",
+  "@dashboardGreetingAfternoon": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+
+  "dashboardGreetingEvening": "Good evening, {name}",
+  "@dashboardGreetingEvening": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+
+  "dashboardFarmHealth": "Farm Health",
+  "dashboardQuickScan": "Scan Crop",
+  "dashboardWeather": "Weather",
+  "dashboardMarketPrices": "Market Prices",
+
+  "offlineBadge": "Offline",
+  "offlineMessage": "You are offline. Data is saved locally and will sync when connected.",
+  "syncPending": "Syncing...",
+  "syncComplete": "Synced",
+  "syncFailed": "Sync failed. Will retry automatically.",
+
+  "errorGeneric": "Something unexpected happened. Please try again.",
+  "errorNetwork": "No internet connection. Check your network and try again.",
+  "errorCameraPermission": "Camera permission is required to scan crops. Enable it in Settings.",
+  "errorLocationPermission": "Location permission is required for map features. Enable it in Settings.",
+  "errorAiInference": "AI analysis could not be completed. Ensure the crop is well-lit and try again.",
+  "errorStorageFull": "Device storage is full. Free up space and try again.",
+
+  "buttonRetry": "Try Again",
+  "buttonOpenSettings": "Open Settings",
+  "buttonCancel": "Cancel",
+  "buttonConfirm": "Confirm",
+  "buttonSave": "Save",
+  "buttonDelete": "Delete",
+  "buttonShare": "Share",
+  "buttonExport": "Export",
+
+  "loadingDefault": "Loading...",
+
+  "emptyDiagnosesTitle": "No diagnoses yet",
+  "emptyDiagnosesDescription": "Scan a crop to get your first AI diagnosis.",
+  "emptyDiagnosesAction": "Scan Crop",
+
+  "emptyFarmsTitle": "No farms added",
+  "emptyFarmsDescription": "Add your first farm to start managing your crops.",
+  "emptyFarmsAction": "Add Farm",
+
+  "emptyNotificationsTitle": "No notifications",
+  "emptyNotificationsDescription": "You are up to date. Check back later.",
+
+  "emptyPostsTitle": "No posts yet",
+  "emptyPostsDescription": "Be the first to share something with your community.",
+  "emptyPostsAction": "Create Post"
+}
