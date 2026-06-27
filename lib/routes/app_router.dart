@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../features/authentication/presentation/pages/splash_page.dart';
 import '../features/authentication/routes/auth_routes.dart';
-import '../features/dashboard/presentation/pages/dashboard_page.dart';
+import '../features/dashboard/routes/dashboard_routes.dart';
 
 abstract final class AppRoutes {
   static const String splash = 'splash';
@@ -83,12 +83,8 @@ final appRouterProvider = Provider<GoRouter>(
         name: AppRoutes.splash,
         builder: (_, __) => const SplashPage(),
       ),
-      GoRoute(
-        path: '/dashboard',
-        name: AppRoutes.dashboard,
-        builder: (_, __) => const DashboardPage(),
-      ),
       ...authRoutes,
+      ...dashboardRoutes,
     ],
   ),
 );

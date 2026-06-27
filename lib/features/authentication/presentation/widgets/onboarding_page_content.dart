@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/theme/app_spacing.dart';
+import '../../../../core/theme/app_spacing.dart';
 
 /// Content for a single onboarding screen.
 class OnboardingPageContent extends StatelessWidget {
