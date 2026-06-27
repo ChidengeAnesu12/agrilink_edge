@@ -3,11 +3,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../features/authentication/presentation/pages/splash_page.dart';
+import '../features/authentication/routes/auth_routes.dart';
+import '../features/dashboard/presentation/pages/dashboard_page.dart';
 
-/// All route name constants.
-///
-/// Never hardcode route path strings in widgets.
-/// Always use these constants with context.goNamed(AppRoutes.x).
 abstract final class AppRoutes {
   static const String splash = 'splash';
   static const String onboarding = 'onboarding';
@@ -73,10 +71,6 @@ abstract final class AppRoutes {
   static const String learningCenter = 'learning-center';
 }
 
-/// Global GoRouter provider.
-///
-/// Kept alive for the application's lifetime.
-/// Routes will be registered progressively as each feature is built.
 final appRouterProvider = Provider<GoRouter>(
   (ref) => GoRouter(
     debugLogDiagnostics: true,
@@ -87,17 +81,20 @@ final appRouterProvider = Provider<GoRouter>(
       GoRoute(
         path: '/',
         name: AppRoutes.splash,
-        builder: (context, state) => const SplashPage(),
+        builder: (_, __) => const SplashPage(),
       ),
-      // Routes registered here as each phase is completed.
+      GoRoute(
+        path: '/dashboard',
+        name: AppRoutes.dashboard,
+        builder: (_, __) => const DashboardPage(),
+      ),
+      ...authRoutes,
     ],
   ),
 );
 
-/// Fallback page for unmatched or broken routes.
 class _RouteErrorPage extends StatelessWidget {
   const _RouteErrorPage({this.error});
-
   final Exception? error;
 
   @override
